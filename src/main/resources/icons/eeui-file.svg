@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 160 160" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>eeui-file</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-14.3%" y="-21.4%" width="128.6%" height="142.9%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="eeui" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="logo" filter="url(#filter-1)" transform="translate(39.000000, 20.000000)" fill="#87939A" fill-rule="nonzero">
+            <path d="M67.4144367,20.7815101 C66.5974546,20.7815101 65.911072,20.5031709 65.3540097,19.9461085 C64.7973311,19.3894299 64.3332619,18.7396305 63.9619296,17.9973497 C63.5904695,17.2545574 63.3121302,16.4934734 63.1264001,15.713842 C62.94067,14.9342106 62.8480607,14.2845391 62.8480607,13.7646995 L62.8480607,0.065827375 L63.0710136,0.065827375 C63.7388489,0.065827375 64.3699729,0.140400875 64.9643859,0.28878025 C65.5582872,0.4372875 66.2820205,0.78943275 67.1360975,1.346623 C67.9901744,1.90330163 69.0293419,2.682933 70.2543674,3.68538938 C71.4793927,4.68797363 73.020492,6.00560825 74.8766415,7.63931663 C76.8812984,9.42140438 78.477656,10.9247691 79.6658424,12.1503061 C80.853645,13.3752036 81.7636201,14.414499 82.3946162,15.2687039 C83.0257404,16.1226529 83.4153641,16.8465141 83.5637436,17.4402875 C83.7122509,18.0347005 83.7866965,18.5540284 83.7866965,18.9994224 L83.7866965,20.7815101 L67.4144367,20.7815101 L67.4144367,20.7815101 Z M83.7866965,56.0038533 L83.7866965,29.8036171 L67.3718416,29.8036171 C64.1605789,29.8036171 61.1524424,28.5640096 58.9015525,26.3132476 C57.657468,25.0691631 56.6179168,23.6211849 55.8120631,22.0094776 C55.1319483,20.6495036 54.611725,19.2240381 54.2658475,17.7723504 C53.9122953,16.287661 53.7407635,14.9633749 53.7407635,13.7221045 L53.7407635,0.065827375 L-5.68434189e-14,1.77635684e-15 L-5.68434189e-14,56 L83.7866965,56.0038533 Z" id="bg" transform="translate(41.893348, 28.001927) scale(-1, 1) translate(-41.893348, -28.001927) "></path>
+        </g>
+        <rect id="矩形" fill="#3EB4FF" x="23" y="84" width="115" height="58"></rect>
+        <text id="EEUI" font-family="Arial-BoldMT, Arial" font-size="53" font-weight="bold" letter-spacing="-3.05769231" fill="#2B424B">
+            <tspan x="23" y="132">EEUI</tspan>
+        </text>
+    </g>
+</svg>

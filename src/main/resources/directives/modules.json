@@ -1,0 +1,223 @@
+[
+  {
+    "name": "eeui",
+    "methods": [
+      {"name": "adDialog", "desc": "图片广告弹窗"},
+      {"name": "adDialogClose", "desc": "手动关闭弹窗"},
+
+      {"name": "ajax", "desc": "跨域请求"},
+      {"name": "ajaxCancel", "desc": "取消跨域请求"},
+      {"name": "getCacheSizeAjax", "desc": "获取跨域请求缓存"},
+      {"name": "clearCacheAjax", "desc": "清除跨域请求缓存"},
+
+      {"name": "alert", "desc": "警告框"},
+      {"name": "confirm", "desc": "确认对话框"},
+      {"name": "input", "desc": "输入对话框"},
+
+      {"name": "getCacheSizeDir", "desc": "获取内部缓存目录大小"},
+      {"name": "clearCacheDir", "desc": "清空内部缓存目录"},
+      {"name": "getCacheSizeFiles", "desc": "获取内部文件目录大小"},
+      {"name": "clearCacheFiles", "desc": "清空内部文件目录"},
+      {"name": "getCacheSizeDbs", "desc": "获取内部数据库目录大小"},
+      {"name": "clearCacheDbs", "desc": "清空内部数据库目录"},
+
+      {"name": "swipeCaptcha", "desc": "显示滑动验证码弹窗"},
+
+      {"name": "keyboardHide", "desc": "动态隐藏软键盘"},
+      {"name": "keyboardStatus", "desc": "判断软键盘是否可见"},
+
+      {"name": "loading", "desc": "显示等待弹窗"},
+      {"name": "loadingClose", "desc": "关闭等待弹窗"},
+
+      {"name": "openPage", "desc": "打开新页面"},
+      {"name": "getPageInfo", "desc": "获取页面信息"},
+      {"name": "getPageInfoAsync", "desc": "获取页面信息（异步）"},
+      {"name": "reloadPage", "desc": "重新加载页面"},
+      {"name": "setSoftInputMode", "desc": "设置键盘弹出方式"},
+      {"name": "setPageBackPressed", "desc": "[仅Android]拦截返回按键事件"},
+      {"name": "setOnRefreshListener", "desc": "监听下拉刷新事件"},
+      {"name": "setRefreshing", "desc": "设置下拉刷新状态"},
+      {"name": "setStatusBarStyle", "desc": "修改状态栏字体颜色"},
+      {"name": "setPageStatusListener", "desc": "添加监听页面状态变化"},
+      {"name": "clearPageStatusListener", "desc": "清除监听页面状态变化"},
+      {"name": "onPageStatusListener", "desc": "手动执行(触发)页面状态"},
+      {"name": "getCacheSizePage", "desc": "获取页面缓存大小"},
+      {"name": "clearCachePage", "desc": "手动清除页面缓存"},
+      {"name": "closePage", "desc": "关闭页面"},
+      {"name": "closePageTo", "desc": "关闭至某个页面"},
+      {"name": "openWeb", "desc": "调用系统浏览器打开页面"},
+      {"name": "goDesktop", "desc": "[仅Android]返回手机桌面"},
+      {"name": "getConfigString", "desc": "获取eeui.config.js配置文件指定参数"},
+      {"name": "setCustomConfig", "desc": "自定义eeui.config.js配置参数"},
+      {"name": "getCustomConfig", "desc": "获取eeui.config.js所有自定义的配置参数"},
+      {"name": "clearCustomConfig", "desc": "清除eeui.config.js自定义的配置参数"},
+      {"name": "realUrl", "desc": "规范化url"},
+      {"name": "rewriteUrl", "desc": "将相对地址基于当前地址补全"},
+
+      {"name": "openOtherApp", "desc": "打开常用第三方APP"},
+      {"name": "openOtherAppTo", "desc": "打开其他第三方APP"},
+
+      {"name": "copyText", "desc": "复制文本到剪贴板"},
+      {"name": "pasteText", "desc": "获取剪贴板的文本"},
+
+      {"name": "saveImage", "desc": "保存图片至本地"},
+      {"name": "saveImageTo", "desc": "[仅Android]保存图片至指定目录"},
+
+      {"name": "getImageSize", "desc": "获取图片尺寸"},
+
+      {"name": "openScaner", "desc": "二维码扫描页面"},
+
+      {"name": "shareText", "desc": "调用系统分享文字"},
+      {"name": "shareImage", "desc": "调用系统分享图片"},
+
+      {"name": "setCaches", "desc": "保存数据信息"},
+      {"name": "getCaches", "desc": "获取数据信息"},
+      {"name": "setCachesString", "desc": "保存数据信息（文本形式）"},
+      {"name": "getCachesString", "desc": "获取数据信息（文本形式）"},
+      {"name": "getAllCaches", "desc": "获取所有数据信息"},
+      {"name": "clearAllCaches", "desc": "清除所有数据信息"},
+      {"name": "setVariate", "desc": "设置全局变量"},
+      {"name": "getVariate", "desc": "获取全局变量"},
+      {"name": "getAllVariate", "desc": "获取所有全局变量"},
+      {"name": "clearAllVariate", "desc": "清除所有全局变量"},
+
+      {"name": "getStatusBarHeight", "desc": "获取状态栏高度（屏幕像素）"},
+      {"name": "getStatusBarHeightPx", "desc": "获取状态栏高度（px单位）"},
+      {"name": "getNavigationBarHeight", "desc": "获取虚拟键盘高度（屏幕像素）"},
+      {"name": "getNavigationBarHeightPx", "desc": "获取虚拟键盘高度（px单位）"},
+      {"name": "compareVersion", "desc": "比较版本号的大小"},
+      {"name": "getImei", "desc": "获取手机的IMEI"},
+      {"name": "getImeiAsync", "desc": "获取手机的IMEI（异步方法）"},
+      {"name": "getIfa", "desc": "获取手机的IFA"},
+      {"name": "getIfaAsync", "desc": "获取手机的IFA（异步方法）"},
+      {"name": "isIPhoneXType", "desc": "判断是否iPhone X+系列"},
+
+      {"name": "toast", "desc": "Toast提示"},
+      {"name": "toastClose", "desc": "隐藏Toast提示"},
+
+      {"name": "getVersion", "desc": "获取eeui版本号"},
+      {"name": "getVersionName", "desc": "获取eeui版本号名称"},
+      {"name": "getLocalVersion", "desc": "获取本地软件版本号"},
+      {"name": "getLocalVersionName", "desc": "获取本地软件版本号名称"},
+      {"name": "getSDKVersionCode", "desc": "获取设备系统版本号"},
+      {"name": "getSDKVersionName", "desc": "获取设备系统版本名称"},
+      {"name": "getUpdateId", "desc": "获取已热更新至的数据ID（为0表示没有热更新）"},
+      {"name": "checkUpdate", "desc": "客户端主动触发热更新事件"}
+    ]
+  },
+  {
+    "name": "navigationBar",
+    "methods": [
+      {"name": "setTitle", "desc": "设置页面标题"},
+      {"name": "setLeftItem", "desc": "设置标题栏左边按钮"},
+      {"name": "setRightItem", "desc": "设置标题栏右边按钮"},
+      {"name": "show", "desc": "手动显示标题栏"},
+      {"name": "hide", "desc": "手动隐藏标题栏"}
+    ]
+  },
+  {
+    "name": "navigator",
+    "methods": [
+      {"name": "push", "desc": "打开新页面"},
+      {"name": "pop", "desc": "关闭页面"}
+    ]
+  },
+  {
+    "name": "animation",
+    "methods": [
+      {"name": "transition", "desc": "执行动画"}
+    ]
+  },
+  {
+    "name": "clipboard",
+    "methods": [
+      {"name": "setString", "desc": "向系统剪贴板设置内容"},
+      {"name": "getString", "desc": "从系统剪贴板获取内容"}
+    ]
+  },
+  {
+    "name": "dom",
+    "methods": [
+      {"name": "scrollToElement", "desc": "让页面滚动到 ref 对应的组件"},
+      {"name": "getComponentRect", "desc": "获取某个元素 View 的外框"},
+      {"name": "getLayoutDirection", "desc": "获取当前的布局方向"},
+      {"name": "addRule", "desc": "提供 DOM.addRule 以加载自定义字体"}
+    ]
+  },
+  {
+    "name": "globalEvent",
+    "methods": [
+      {"name": "addEventListener", "desc": "注册对一个全局事件的监听"},
+      {"name": "removeEventListener", "desc": "取消对一个全局事件的监听"}
+    ]
+  },
+  {
+    "name": "meta",
+    "methods": [
+      {"name": "setViewport", "desc": "设置容器默认的宽度"}
+    ]
+  },
+  {
+    "name": "modal",
+    "methods": [
+      {"name": "toast", "desc": "小浮层展示文字信息"},
+      {"name": "alert", "desc": "警告框"},
+      {"name": "confirm", "desc": "确认框"},
+      {"name": "prompt", "desc": "提示输入框"}
+    ]
+  },
+  {
+    "name": "picker",
+    "methods": [
+      {"name": "pick", "desc": "选择器"},
+      {"name": "pickDate", "desc": "日期选择器"},
+      {"name": "pickTime", "desc": "时间选择器"}
+    ]
+  },
+  {
+    "name": "storage",
+    "methods": [
+      {"name": "setItem", "desc": "存储或更新数据到本地"},
+      {"name": "getItem", "desc": "传入键名返回对应的键值"},
+      {"name": "removeItem", "desc": "删除对应键值"},
+      {"name": "length", "desc": "获取所有数据的长度"},
+      {"name": "getAllKeys", "desc": "获取所有数据的数组"}
+    ]
+  },
+  {
+    "name": "stream",
+    "methods": [
+      {"name": "fetch", "desc": "发起一个网络请求"}
+    ]
+  },
+  {
+    "name": "webView",
+    "methods": [
+      {"name": "goBack", "desc": "<web>组件返回"},
+      {"name": "goForward", "desc": "<web>组件前进"},
+      {"name": "reload", "desc": "<web>组件刷新"}
+    ]
+  },
+  {
+    "name": "input",
+    "methods": [
+      {"name": "focus", "desc": "组件聚焦"},
+      {"name": "blur", "desc": "移除焦点并关闭软键盘"},
+      {"name": "setSelectionRange", "desc": "设置文本选区"},
+      {"name": "getSelectionRange", "desc": "获取文本选区"},
+      {"name": "setTextFormatter", "desc": "对输入内容进行实时格式化的规则"}
+    ],
+    "component": true
+  },
+  {
+    "name": "textarea",
+    "methods": [
+      {"name": "focus", "desc": "组件聚焦"},
+      {"name": "blur", "desc": "移除焦点并关闭软键盘"},
+      {"name": "setSelectionRange", "desc": "设置文本选区"},
+      {"name": "getSelectionRange", "desc": "获取文本选区"},
+      {"name": "setTextFormatter", "desc": "对输入内容进行实时格式化的规则"}
+    ],
+    "component": true
+  }
+]

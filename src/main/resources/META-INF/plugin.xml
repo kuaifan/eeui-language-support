@@ -1,0 +1,47 @@
+<idea-plugin>
+    <id>com.eeui.plugin.eeui</id>
+    <name>eeui</name>
+    <version>1.0</version>
+    <vendor url="https://github.com/kuaifan/eeui">eeui</vendor>
+
+    <idea-version since-build="173.0"/>
+
+    <description><![CDATA[
+      support for eeui framework,
+      before use this plugin, you must install plugin <a href="https://github.com/JetBrains/intellij-plugins/tree/master/vuejs">vuejs</a>
+    ]]></description>
+
+    <depends>JavaScript</depends>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+
+        <!-- 通用性代码块提示 -->
+        <defaultLiveTemplatesProvider implementation="com.eeui.EEUITemplatesProvider"/>
+        <liveTemplateContext implementation="com.eeui.EEUIContext" />
+
+        <!-- 文件类型 -->
+        <fileType name="eeui" implementationClass="com.eeui.lang.EEUIFileType" fieldName="INSTANCE" language="eeui" extensions="vue"/>
+
+        <!-- 标签文档提示 -->
+        <lang.documentationProvider language="HTML" implementationClass="com.eeui.document.DocumentProvider" order="first"/>
+        <!--<toolWindow id="EEUI Documents" anchor="right" secondary="true" icon="/icons/eeui-logo.svg" factoryClass="com.eeui.document.toolwindow.DocumentWindowFactory"/>-->
+
+        <!-- 标签自动完成 -->
+        <xml.tagNameProvider implementation="com.eeui.tag.EEUITagNameProvider"/>
+        <xml.elementDescriptorProvider implementation="com.eeui.tag.EEUITagNameProvider" order="first"/>
+
+        <!-- 标签属性、模块方法 -->
+        <completion.contributor language="HTML" implementationClass="com.eeui.complection.EEUICompletionContributor"/>
+        <completion.contributor language="JavaScript" implementationClass="com.eeui.complection.EEUIScriptCompletionContributor"/>
+
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="eeui.new" class="com.eeui.EEUINewFileAction" text="EEUI File" description="Create new eeui file" icon="/icons/eeui-file.svg">
+            <add-to-group group-id="NewGroup" anchor="before" relative-to-action="NewFile"/>
+        </action>
+    </actions>
+</idea-plugin>

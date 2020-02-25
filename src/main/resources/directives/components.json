@@ -1,0 +1,1359 @@
+[
+  {
+    "name": "a",
+    "desc": "页面间的跳转或关闭的组件",
+    "url": "https://eeui.app/component/a.html",
+    "attrs": [
+      {
+        "name": "href",
+        "desc": "待跳转的页面 URL，-1为关闭当前页面",
+        "type": "String",
+        "defval": "-",
+        "option": []
+      },
+      {
+        "name": "statusBarColor",
+        "desc": "状态栏颜色值",
+        "type": "String",
+        "defval": "继承 > #3EB4FF",
+        "option": []
+      },
+      {
+        "name": "backgroundColor",
+        "desc": "页面背景颜色",
+        "type": "String",
+        "defval": "继承 > #ffffff",
+        "option": []
+      }
+    ]
+  },
+  {
+    "name": "banner",
+    "desc": "轮播组件",
+    "url": "https://eeui.app/component/banner.html",
+    "attrs": [
+      {
+        "name": "autoPlayDuration",
+        "desc": "设置切换间隔时间，单位：毫秒",
+        "type": "Number",
+        "defval": "6000",
+        "option": []
+      },
+      {
+        "name": "scrollDuration",
+        "desc": "设置切换过程时间，单位：毫秒",
+        "type": "Number",
+        "defval": "900",
+        "option": []
+      },
+      {
+        "name": "indicatorShow",
+        "desc": "是否显示指示器",
+        "type": "Boolean",
+        "defval": "true",
+        "option": [
+          {"value": "true", "desc": ""},
+          {"value": "false", "desc": ""}
+        ]
+      },
+      {
+        "name": "indicatorShape",
+        "desc": "设置指示器形状",
+        "type": "Number",
+        "defval": "1",
+        "option": [
+          {"value": "0", "desc": "矩形"},
+          {"value": "1", "desc": "圆形"}
+        ]
+      },
+      {
+        "name": "indicatorPosition",
+        "desc": "设置指示器位置",
+        "type": "Number",
+        "defval": "0",
+        "option": [
+          {"value": "0", "desc": "中下"},
+          {"value": "1", "desc": "右下"},
+          {"value": "2", "desc": "左下"},
+          {"value": "3", "desc": "中上"},
+          {"value": "4", "desc": "右上"},
+          {"value": "5", "desc": "左上"}
+        ]
+      },
+      {
+        "name": "indicatorMargin",
+        "desc": "设置指示器边缘距离",
+        "type": "Number",
+        "defval": "8",
+        "option": []
+      },
+      {
+        "name": "indicatorSpace",
+        "desc": "设置指示器间距",
+        "type": "Number",
+        "defval": "3",
+        "option": []
+      },
+      {
+        "name": "selectedIndicatorColor",
+        "desc": "设置指示器已选颜色",
+        "type": "String",
+        "defval": "#3EB4FF",
+        "option": []
+      },
+      {
+        "name": "unSelectedIndicatorColor",
+        "desc": "设置指示器未选颜色",
+        "type": "String",
+        "defval": "#99ffffff",
+        "option": []
+      },
+      {
+        "name": "indicatorWidth",
+        "desc": "设置指示器宽",
+        "type": "Number",
+        "defval": "6",
+        "option": []
+      },
+      {
+        "name": "indicatorHeight",
+        "desc": "设置指示器高",
+        "type": "Number",
+        "defval": "6",
+        "option": []
+      }
+    ]
+  },
+  {
+    "name": "button",
+    "desc": "常用按钮",
+    "url": "https://eeui.app/component/button.html",
+    "attrs": [
+      {
+        "name": "text",
+        "desc": "按钮文字",
+        "type": "String",
+        "defval": "-",
+        "option": []
+      },
+      {
+        "name": "color",
+        "desc": "按钮文字颜色",
+        "type": "String",
+        "defval": "#FFFFFF",
+        "option": []
+      },
+      {
+        "name": "fontSize",
+        "desc": "字体大小",
+        "type": "Number",
+        "defval": "-",
+        "option": []
+      },
+      {
+        "name": "backgroundColor",
+        "desc": "按钮背景颜色",
+        "type": "String",
+        "defval": "#3EB4FF",
+        "option": []
+      },
+      {
+        "name": "borderRadius",
+        "desc": "圆角半径",
+        "type": "Number",
+        "defval": "8",
+        "option": []
+      },
+      {
+        "name": "borderWidth",
+        "desc": "边框大小",
+        "type": "Number",
+        "defval": "0",
+        "option": []
+      },
+      {
+        "name": "borderColor",
+        "desc": "边框颜色",
+        "type": "String",
+        "defval": "-",
+        "option": []
+      },
+      {
+        "name": "disabled",
+        "desc": "是否禁用",
+        "type": "Boolean",
+        "defval": "false",
+        "option": [
+          {"value": "true", "desc": ""},
+          {"value": "false", "desc": ""}
+        ]
+      },
+      {
+        "name": "loading",
+        "desc": "是否加载中",
+        "type": "Boolean",
+        "defval": "false",
+        "option": [
+          {"value": "true", "desc": ""},
+          {"value": "false", "desc": ""}
+        ]
+      },
+      {
+        "name": "model",
+        "desc": "预设风格",
+        "type": "String",
+        "defval": "-",
+        "option": [
+          {"value": "red", "desc": "红色"},
+          {"value": "green", "desc": "绿色"},
+          {"value": "blue", "desc": "蓝色"},
+          {"value": "pink", "desc": "粉红"},
+          {"value": "yellow", "desc": "黄色"},
+          {"value": "orange", "desc": "橙色"},
+          {"value": "gray", "desc": "灰色"},
+          {"value": "black", "desc": "黑色"},
+          {"value": "white", "desc": "白色"}
+        ]
+      }
+    ]
+  },
+  {
+    "name": "grid",
+    "desc": "分页网格容器",
+    "url": "https://eeui.app/component/grid.html",
+    "attrs": [
+      {
+        "name": "row",
+        "desc": "设置每页行数",
+        "type": "Number",
+        "defval": "3",
+        "option": []
+      },
+      {
+        "name": "columns",
+        "desc": "设置每页列数",
+        "type": "Number",
+        "defval": "3",
+        "option": []
+      },
+      {
+        "name": "divider",
+        "desc": "设置是否显示分隔线",
+        "type": "Boolean",
+        "defval": "true",
+        "option": [
+          {"value": "true", "desc": ""},
+          {"value": "false", "desc": ""}
+        ]
+      },
+      {
+        "name": "dividerColor",
+        "desc": "设置分隔线颜色",
+        "type": "String",
+        "defval": "#E8E8E8",
+        "option": []
+      },
+      {
+        "name": "dividerWidth",
+        "desc": "设置分隔线尺寸",
+        "type": "Number",
+        "defval": "1",
+        "option": []
+      },
+      {
+        "name": "indicatorShow",
+        "desc": "是否显示指示器",
+        "type": "Boolean",
+        "defval": "true",
+        "option": [
+          {"value": "true", "desc": ""},
+          {"value": "false", "desc": ""}
+        ]
+      },
+      {
+        "name": "indicatorShape",
+        "desc": "设置指示器形状",
+        "type": "Number",
+        "defval": "1",
+        "option": [
+          {"value": "0", "desc": "矩形"},
+          {"value": "1", "desc": "圆形"}
+        ]
+      },
+      {
+        "name": "indicatorSpace",
+        "desc": "设置指示器间距",
+        "type": "Number",
+        "defval": "3",
+        "option": []
+      },
+      {
+        "name": "selectedIndicatorColor",
+        "desc": "设置指示器已选颜色",
+        "type": "String",
+        "defval": "#3EB4FF",
+        "option": []
+      },
+      {
+        "name": "unSelectedIndicatorColor",
+        "desc": "设置指示器未选颜色",
+        "type": "String",
+        "defval": "#E0E0E0",
+        "option": []
+      },
+      {
+        "name": "indicatorWidth",
+        "desc": "设置指示器宽",
+        "type": "Number",
+        "defval": "6",
+        "option": []
+      },
+      {
+        "name": "indicatorHeight",
+        "desc": "设置指示器高",
+        "type": "Number",
+        "defval": "6",
+        "option": []
+      }
+    ]
+  },
+  {
+    "name": "icon",
+    "desc": "字体图标",
+    "url": "https://eeui.app/component/icon.html",
+    "attrs": [
+      {
+        "name": "content",
+        "desc": "图标的名称",
+        "type": "String",
+        "defval": "home",
+        "option": []
+      },
+      {
+        "name": "text",
+        "desc": "同content",
+        "type": "String",
+        "defval": "-",
+        "option": []
+      },
+      {
+        "name": "color",
+        "desc": "图标颜色",
+        "type": "String",
+        "defval": "#242424",
+        "option": []
+      },
+      {
+        "name": "fontSize",
+        "desc": "图标的大小",
+        "type": "Number",
+        "defval": "38",
+        "option": []
+      },
+      {
+        "name": "clickColor",
+        "desc": "图标点击颜色",
+        "type": "String",
+        "defval": "-",
+        "option": []
+      }
+    ]
+  },
+  {
+    "name": "marquee",
+    "desc": "横向文字滚动容器",
+    "url": "https://eeui.app/component/marquee.html",
+    "attrs": [
+      {
+        "name": "content",
+        "desc": "显示的文字",
+        "type": "String",
+        "defval": "-",
+        "option": []
+      },
+      {
+        "name": "text",
+        "desc": "同content",
+        "type": "String",
+        "defval": "-",
+        "option": []
+      },
+      {
+        "name": "color",
+        "desc": "滚动的文字颜色",
+        "type": "String",
+        "defval": "#000000",
+        "option": []
+      },
+      {
+        "name": "fontSize",
+        "desc": "字体大小",
+        "type": "Number",
+        "defval": "24",
+        "option": []
+      },
+      {
+        "name": "textAlign",
+        "desc": "对齐方式",
+        "type": "String",
+        "defval": "left",
+        "option": [
+          {"value": "left", "desc": ""},
+          {"value": "center", "desc": ""},
+          {"value": "right", "desc": ""}
+        ]
+      },
+      {
+        "name": "backgroundColor",
+        "desc": "滚动的文字背景颜色",
+        "type": "String",
+        "defval": "#00ffffff",
+        "option": []
+      }
+    ]
+  },
+  {
+    "name": "navbar",
+    "desc": "导航栏",
+    "url": "https://eeui.app/component/navbar.html",
+    "attrs": [
+      {
+        "name": "titleType",
+        "desc": "标题对齐方式",
+        "type": "String",
+        "defval": "middle",
+        "option": [
+          {"value": "left", "desc": ""},
+          {"value": "right", "desc": ""},
+          {"value": "middle", "desc": ""}
+        ]
+      }
+    ]
+  },
+  {
+    "name": "navbar-item",
+    "parent": "navbar",
+    "desc": "导航栏子组件",
+    "url": "https://eeui.app/component/navbar.html#navbar-item",
+    "attrs": [
+      {
+        "name": "type",
+        "desc": "类型",
+        "type": "String",
+        "defval": "title",
+        "option": [
+          {"value": "back", "desc": "返回按钮"},
+          {"value": "left", "desc": "左边内容"},
+          {"value": "title", "desc": "标题内容"},
+          {"value": "right", "desc": "右边内容"}
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ripple",
+    "desc": "水波纹效果容器",
+    "url": "https://eeui.app/component/ripple.html",
+    "attrs": []
+  },
+  {
+    "name": "scroll-text",
+    "desc": "滚动文字容器",
+    "url": "https://eeui.app/component/scroll-text.html",
+    "attrs": [
+      {
+        "name": "content",
+        "desc": "滚动的文字",
+        "type": "String",
+        "defval": "-",
+        "option": []
+      },
+      {
+        "name": "text",
+        "desc": "同content",
+        "type": "String",
+        "defval": "-",
+        "option": []
+      },
+      {
+        "name": "speed",
+        "desc": "滚动的速度",
+        "type": "Float",
+        "defval": "2",
+        "option": []
+      },
+      {
+        "name": "fontSize",
+        "desc": "字体大小",
+        "type": "Number",
+        "defval": "24",
+        "option": []
+      },
+      {
+        "name": "color",
+        "desc": "滚动的文字颜色",
+        "type": "String",
+        "defval": "#000000",
+        "option": []
+      },
+      {
+        "name": "backgroundColor",
+        "desc": "滚动的文字背景颜色",
+        "type": "String",
+        "defval": "#00ffffff",
+        "option": []
+      }
+    ]
+  },
+  {
+    "name": "scroll-view",
+    "desc": "列表容器",
+    "url": "https://eeui.app/component/scroll-view.html",
+    "attrs": [
+      {
+        "name": "refreshAuto",
+        "desc": "初始化自动加载下拉刷新",
+        "type": "Boolean",
+        "defval": "false",
+        "option": [
+          {"value": "true", "desc": ""},
+          {"value": "false", "desc": ""}
+        ]
+      },
+      {
+        "name": "pullTips",
+        "desc": "是否显示上拉加载更多的提示",
+        "type": "Boolean",
+        "defval": "true",
+        "option": [
+          {"value": "true", "desc": ""},
+          {"value": "false", "desc": ""}
+        ]
+      },
+      {
+        "name": "pullTipsDefault",
+        "desc": "上拉加载默认的提示语",
+        "type": "String",
+        "defval": "正在加载数据...",
+        "option": []
+      },
+      {
+        "name": "pullTipsLoad",
+        "desc": "上拉加载正在加载的提示语",
+        "type": "String",
+        "defval": "正在加载更多...",
+        "option": []
+      },
+      {
+        "name": "pullTipsNo",
+        "desc": "上拉加载没有更多的提示语",
+        "type": "String",
+        "defval": "没有更多数据了",
+        "option": []
+      },
+      {
+        "name": "itemDefaultAnimator",
+        "desc": "[仅Android]打开关闭局部刷新默认动画",
+        "type": "Boolean",
+        "defval": "false",
+        "option": [
+          {"value": "true", "desc": ""},
+          {"value": "false", "desc": ""}
+        ]
+      }
+    ]
+  },
+  {
+    "name": "scroll-header",
+    "parent": "scroll-view",
+    "desc": "<scroll-view>子组件",
+    "url": "https://eeui.app/component/scroll-view.html#scroll-header",
+    "attrs": []
+  },
+  {
+    "name": "side-panel",
+    "desc": "抽屉侧边栏",
+    "url": "https://eeui.app/component/side-panel.html",
+    "attrs": [
+      {
+        "name": "width",
+        "desc": "侧边栏的宽度",
+        "type": "Number",
+        "defval": "380",
+        "option": []
+      },
+      {
+        "name": "scrollbar",
+        "desc": "侧边栏是否显示滚动条",
+        "type": "Boolean",
+        "defval": "false",
+        "option": [
+          {"value": "true", "desc": ""},
+          {"value": "false", "desc": ""}
+        ]
+      },
+      {
+        "name": "backgroundColor",
+        "desc": "侧边栏的背景颜色",
+        "type": "String",
+        "defval": "#ffffff",
+        "option": []
+      }
+    ]
+  },
+  {
+    "name": "side-panel-menu",
+    "parent": "side-panel",
+    "desc": "<side-panel>子组件",
+    "url": "https://eeui.app/component/side-panel.html#side-panel-menu",
+    "attrs": [
+      {
+        "name": "name",
+        "desc": "菜单名称",
+        "type": "String",
+        "defval": "-",
+        "option": []
+      }
+    ]
+  },
+  {
+    "name": "tabbar",
+    "desc": "选项卡页面",
+    "url": "https://eeui.app/component/tabbar.html",
+    "attrs": [
+      {
+        "name": "tabType",
+        "desc": "设置tab导航位置",
+        "type": "String",
+        "defval": "bottom",
+        "option": [
+          {"value": "top", "desc": "顶部导航"},
+          {"value": "slidingTop", "desc": "顶部滑动导航"},
+          {"value": "bottom", "desc": "底部导航"}
+        ]
+      },
+      {
+        "name": "tabHeight",
+        "desc": "设置tab高度",
+        "type": "Number",
+        "defval": "100",
+        "option": []
+      },
+      {
+        "name": "tabBackgroundColor",
+        "desc": "设置tab的背景颜色",
+        "type": "String",
+        "defval": "#3EB4FF，底部位置：#ffffff",
+        "option": []
+      },
+      {
+        "name": "tabWidth",
+        "desc": "设置tab固定大小",
+        "type": "Number",
+        "defval": "-",
+        "option": []
+      },
+      {
+        "name": "tabPageAnimated",
+        "desc": "开关页面切换动画",
+        "type": "Boolean",
+        "defval": "true",
+        "option": [
+          {"value": "true", "desc": ""},
+          {"value": "false", "desc": ""}
+        ]
+      },
+      {
+        "name": "tabSlideSwitch",
+        "desc": "手势滑动切换页面",
+        "type": "Boolean",
+        "defval": "true",
+        "option": [
+          {"value": "true", "desc": ""},
+          {"value": "false", "desc": ""}
+        ]
+      },
+      {
+        "name": "indicatorColor",
+        "desc": "设置tab显示器颜色",
+        "type": "String",
+        "defval": "#ffffff",
+        "option": []
+      },
+      {
+        "name": "indicatorHeight",
+        "desc": "设置tab显示器高度",
+        "type": "Number",
+        "defval": "4",
+        "option": []
+      },
+      {
+        "name": "indicatorWidth",
+        "desc": "设置tab显示器固定宽度",
+        "type": "Number",
+        "defval": "20",
+        "option": []
+      },
+      {
+        "name": "indicatorCornerRadius",
+        "desc": "设置tab显示器圆角弧度",
+        "type": "Number",
+        "defval": "2",
+        "option": []
+      },
+      {
+        "name": "underlineGravity",
+        "desc": "设置tab下划线位置",
+        "type": "Number",
+        "defval": "0",
+        "option": [
+          {"value": "1", "desc": "上方"},
+          {"value": "0", "desc": "下方"}
+        ]
+      },
+      {
+        "name": "underlineColor",
+        "desc": "设置tab下划线颜色",
+        "type": "String",
+        "defval": "#ffffff",
+        "option": []
+      },
+      {
+        "name": "underlineHeight",
+        "desc": "设置tab下划线高度",
+        "type": "Number",
+        "defval": "0",
+        "option": []
+      },
+      {
+        "name": "dividerColor",
+        "desc": "设置tab分割线颜色",
+        "type": "String",
+        "defval": "#ffffff",
+        "option": []
+      },
+      {
+        "name": "dividerWidth",
+        "desc": "设置tab分割线宽度",
+        "type": "Number",
+        "defval": "0",
+        "option": []
+      },
+      {
+        "name": "dividerPadding",
+        "desc": "设置tab分割线的上下内边距",
+        "type": "Number",
+        "defval": "12",
+        "option": []
+      },
+      {
+        "name": "textBold",
+        "desc": "设置tab字体加粗",
+        "type": "Number",
+        "defval": "0",
+        "option": [
+          {"value": "0", "desc": "不加粗"},
+          {"value": "1", "desc": "选择加粗"},
+          {"value": "2", "desc": "全部加粗"}
+        ]
+      },
+      {
+        "name": "textSize",
+        "desc": "设置tab字体大小",
+        "type": "Number",
+        "defval": "26",
+        "option": []
+      },
+      {
+        "name": "textSelectColor",
+        "desc": "设置tab字体选中颜色",
+        "type": "String",
+        "defval": "#ffffff，底部位置：#2C97DE",
+        "option": []
+      },
+      {
+        "name": "textUnselectColor",
+        "desc": "设置tab字体未选中颜色",
+        "type": "String",
+        "defval": "#eeeeee，底部位置：#333333",
+        "option": []
+      },
+      {
+        "name": "iconVisible",
+        "desc": "设置tab图标是否可见 (slidingTop无效)",
+        "option": [
+          {"value": "true", "desc": ""},
+          {"value": "false", "desc": ""}
+        ]
+      },
+      {
+        "name": "iconGravity",
+        "desc": "设置tab图标显示位置 (slidingTop无效)",
+        "option": [
+          {"value": "1", "desc": "上方"},
+          {"value": "0", "desc": "下方"}
+        ]
+      },
+      {
+        "name": "iconWidth",
+        "desc": "设置tab图标宽度 (slidingTop无效)",
+        "option": []
+      },
+      {
+        "name": "iconHeight",
+        "desc": "设置tab图标高度 (slidingTop无效)",
+        "option": []
+      },
+      {
+        "name": "iconMargin",
+        "desc": "设置tab图标与文字间距 (slidingTop无效)",
+        "option": []
+      },
+      {
+        "name": "preload",
+        "desc": "是否预加载所有子页面",
+        "option": [
+          {"value": "true", "desc": "预加载所有子页面"},
+          {"value": "false", "desc": "第一次切换到时加载子页面"}
+        ]
+      }
+    ]
+  },
+  {
+    "name": "tabbar-page",
+    "parent": "tabbar",
+    "desc": "<tabbar>子组件",
+    "url": "https://eeui.app/component/tabbar.html#tabbar-page",
+    "attrs": [
+      {
+        "name": "tabName",
+        "desc": "tab页签名称",
+        "type": "String",
+        "defval": "-",
+        "option": []
+      },
+      {
+        "name": "title",
+        "desc": "tab名称",
+        "type": "String",
+        "defval": "New Page",
+        "option": []
+      },
+      {
+        "name": "unSelectedIcon",
+        "desc": "tab未选图标",
+        "type": "String",
+        "defval": "home",
+        "option": []
+      },
+      {
+        "name": "selectedIcon",
+        "desc": "tab已选图标",
+        "type": "String",
+        "defval": "home",
+        "option": []
+      },
+      {
+        "name": "message",
+        "desc": "tab未读信息数",
+        "type": "Number",
+        "defval": "0",
+        "option": []
+      },
+      {
+        "name": "dot",
+        "desc": "是否显示tab未读红点",
+        "type": "Boolean",
+        "defval": "false",
+        "option": [
+          {"value": "true", "desc": ""},
+          {"value": "false", "desc": ""}
+        ]
+      }
+    ]
+  },
+  {
+    "name": "web-view",
+    "desc": "网页容器",
+    "url": "https://eeui.app/component/web-view.html",
+    "attrs": [
+      {
+        "name": "url",
+        "desc": "网页地址",
+        "type": "String",
+        "defval": "-",
+        "option": []
+      },
+      {
+        "name": "content",
+        "desc": "网页内容",
+        "type": "String",
+        "defval": "-",
+        "option": []
+      },
+      {
+        "name": "progressbarVisibility",
+        "desc": "是否显示进度条",
+        "type": "Boolean",
+        "defval": "true",
+        "option": [
+          {"value": "true", "desc": ""},
+          {"value": "false", "desc": ""}
+        ]
+      },
+      {
+        "name": "scrollEnabled",
+        "desc": "是否可以滚动",
+        "type": "Boolean",
+        "defval": "true",
+        "option": [
+          {"value": "true", "desc": ""},
+          {"value": "false", "desc": ""}
+        ]
+      },
+      {
+        "name": "enableApi",
+        "desc": "开启eeui等原生交互模块",
+        "type": "Boolean",
+        "defval": "true",
+        "option": [
+          {"value": "true", "desc": ""},
+          {"value": "false", "desc": ""}
+        ]
+      },
+      {
+        "name": "userAgent",
+        "desc": "自定义浏览器userAgent",
+        "type": "String",
+        "defval": "-",
+        "option": []
+      },
+      {
+        "name": "customUserAgent",
+        "desc": "完全自定义浏览器userAgent",
+        "type": "String",
+        "defval": "-",
+        "option": []
+      },
+      {
+        "name": "transparency",
+        "desc": "设置背景透明",
+        "option": [
+          {"value": "true", "desc": ""},
+          {"value": "false", "desc": ""}
+        ]
+      }
+    ]
+  },
+  {
+    "name": "div",
+    "desc": "通用容器",
+    "url": "https://eeui.app/weex/components/div.html",
+    "attrs": []
+  },
+  {
+    "name": "text",
+    "desc": "文本组件",
+    "url": "https://eeui.app/weex/components/text.html",
+    "attrs": []
+  },
+  {
+    "name": "image",
+    "desc": "图片组件",
+    "url": "https://eeui.app/weex/components/image.html",
+    "attrs": [
+      {
+        "name": "placeholder",
+        "desc": "占位图URL",
+        "type": "String",
+        "defval": "-",
+        "option": []
+      },
+      {
+        "name": "resize",
+        "desc": "图片显示尺寸",
+        "type": "String",
+        "defval": "stretch",
+        "option": [
+          {"value": "cover", "desc": "缩放图片以完全装入"},
+          {"value": "contain", "desc": "缩放图片以完全覆盖"},
+          {"value": "stretch", "desc": "拉伸至设置宽高"}
+        ]
+      },
+      {
+        "name": "src",
+        "desc": "图标地址",
+        "type": "String",
+        "defval": "-",
+        "option": []
+      },
+      {
+        "name": "autoBitmapRecycle",
+        "desc": "[仅Android]滚出屏幕回收内存",
+        "type": "Boolean",
+        "defval": "true",
+        "option": [
+          {"value": "true", "desc": ""},
+          {"value": "false", "desc": ""}
+        ]
+      }
+    ]
+  },
+  {
+    "name": "list",
+    "desc": "列表容器",
+    "url": "https://eeui.app/weex/components/list.html",
+    "attrs": [
+      {
+        "name": "show-scrollbar",
+        "desc": "控制是否出现滚动条",
+        "type": "Boolean",
+        "defval": "true",
+        "option": [
+          {"value": "true", "desc": ""},
+          {"value": "false", "desc": ""}
+        ]
+      },
+      {
+        "name": "loadmoreoffset",
+        "desc": "触发loadmore事件垂直偏移距离",
+        "type": "Number",
+        "defval": "0",
+        "option": []
+      },
+      {
+        "name": "offset-accuracy",
+        "desc": "onscroll事件触发的频率",
+        "type": "Number",
+        "defval": "10",
+        "option": []
+      },
+      {
+        "name": "pagingEnabled",
+        "desc": "是否按分页模式线上List",
+        "type": "Boolean",
+        "defval": "false",
+        "option": [
+          {"value": "true", "desc": ""},
+          {"value": "false", "desc": ""}
+        ]
+      },
+      {
+        "name": "scrollable",
+        "desc": "是否运行List关系",
+        "type": "Boolean",
+        "defval": "false",
+        "option": [
+          {"value": "true", "desc": ""},
+          {"value": "false", "desc": ""}
+        ]
+      }
+    ]
+  },
+  {
+    "name": "scroller",
+    "desc": "滚动容器",
+    "url": "https://eeui.app/weex/components/scroller.html",
+    "attrs": [
+      {
+        "name": "show-scrollbar",
+        "desc": "控制是否出现滚动条",
+        "type": "Boolean",
+        "defval": "true",
+        "option": [
+          {"value": "true", "desc": ""},
+          {"value": "false", "desc": ""}
+        ]
+      },
+      {
+        "name": "scroll-direction",
+        "desc": "控制滚动的方向",
+        "type": "String",
+        "defval": "vertical",
+        "option": [
+          {"value": "vertical", "desc": "竖直方向"},
+          {"value": "horizontal", "desc": "水平方向"}
+        ]
+      },
+      {
+        "name": "loadmoreoffset",
+        "desc": "触发loadmore事件垂直偏移距离",
+        "type": "Number",
+        "defval": "0",
+        "option": []
+      },
+      {
+        "name": "offset-accuracy",
+        "desc": "onscroll事件触发的频率",
+        "type": "Number",
+        "defval": "10",
+        "option": []
+      },
+      {
+        "name": "scrollToBegin",
+        "desc": "控制内容改变后，是否自动滚到初时位置",
+        "type": "Boolean",
+        "defval": "true",
+        "option": [
+          {"value": "true", "desc": ""},
+          {"value": "false", "desc": ""}
+        ]
+      }
+    ]
+  },
+  {
+    "name": "input",
+    "desc": "文本输入框",
+    "url": "https://eeui.app/weex/components/input.html",
+    "attrs": [
+      {
+        "name": "type",
+        "desc": "控件的类型",
+        "type": "String",
+        "defval": "text",
+        "option": [
+          {"value": "text", "desc": ""},
+          {"value": "date", "desc": ""},
+          {"value": "datetime", "desc": ""},
+          {"value": "email", "desc": ""},
+          {"value": "password", "desc": ""},
+          {"value": "tel", "desc": ""},
+          {"value": "time", "desc": ""},
+          {"value": "url", "desc": ""},
+          {"value": "number", "desc": ""}
+        ]
+      },
+      {
+        "name": "value",
+        "desc": "组件的默认内容",
+        "type": "String",
+        "defval": "-",
+        "option": []
+      },
+      {
+        "name": "placeholder",
+        "desc": "提示用户可以输入什么",
+        "type": "String",
+        "defval": "-",
+        "option": []
+      },
+      {
+        "name": "autofocus",
+        "desc": "加载时控件自动获得输入焦点",
+        "type": "Boolean",
+        "defval": "false",
+        "option": [
+          {"value": "true", "desc": ""},
+          {"value": "false", "desc": ""}
+        ]
+      },
+      {
+        "name": "maxlength",
+        "desc": "输入的最大长度",
+        "type": "Number",
+        "defval": "-",
+        "option": []
+      },
+      {
+        "name": "return-key-type",
+        "desc": "键盘返回键的类型",
+        "type": "String",
+        "defval": "defalut",
+        "option": [
+          {"value": "defalut", "desc": ""},
+          {"value": "go", "desc": ""},
+          {"value": "next", "desc": ""},
+          {"value": "search", "desc": ""},
+          {"value": "send", "desc": ""},
+          {"value": "done", "desc": ""}
+        ]
+      },
+      {
+        "name": "singleline",
+        "desc": "控制内容是否只允许单行",
+        "type": "Boolean",
+        "defval": "true",
+        "option": [
+          {"value": "true", "desc": ""},
+          {"value": "false", "desc": ""}
+        ]
+      },
+      {
+        "name": "max-length",
+        "desc": "控制输入内容的最大长度",
+        "type": "Number",
+        "defval": "-",
+        "option": []
+      },
+      {
+        "name": "max",
+        "desc": "控制当 type 属性为 date 时选择日期的最大时间，格式为 yyyy-MM-dd",
+        "type": "String",
+        "defval": "-",
+        "option": []
+      },
+      {
+        "name": "min",
+        "desc": "控制当 type 属性为 date 时选择日期的最小时间，格式为 yyyy-MM-dd",
+        "type": "String",
+        "defval": "-",
+        "option": []
+      },
+      {
+        "name": "upriseOffset",
+        "desc": "[仅iOS]键盘上边缘与输入框下边缘的间隙",
+        "type": "Number",
+        "defval": "20",
+        "option": []
+      },
+      {
+        "name": "hideDoneButton",
+        "desc": "[仅iOS]隐藏键盘上面的完成栏",
+        "type": "Boolean",
+        "defval": "false",
+        "option": [
+          {"value": "true", "desc": ""},
+          {"value": "false", "desc": ""}
+        ]
+      }
+    ]
+  },
+  {
+    "name": "textarea",
+    "desc": "多行文本输入",
+    "url": "https://eeui.app/weex/components/textarea.html",
+    "attrs": [
+      {
+        "name": "row",
+        "desc": "输入的行数",
+        "type": "Number",
+        "defval": "2",
+        "option": []
+      },
+      {
+        "name": "type",
+        "desc": "控件的类型",
+        "type": "String",
+        "defval": "text",
+        "option": [
+          {"value": "text", "desc": ""},
+          {"value": "date", "desc": ""},
+          {"value": "datetime", "desc": ""},
+          {"value": "email", "desc": ""},
+          {"value": "password", "desc": ""},
+          {"value": "tel", "desc": ""},
+          {"value": "time", "desc": ""},
+          {"value": "url", "desc": ""},
+          {"value": "number", "desc": ""}
+        ]
+      },
+      {
+        "name": "value",
+        "desc": "组件的默认内容",
+        "type": "String",
+        "defval": "-",
+        "option": []
+      },
+      {
+        "name": "placeholder",
+        "desc": "提示用户可以输入什么",
+        "type": "String",
+        "defval": "-",
+        "option": []
+      },
+      {
+        "name": "autofocus",
+        "desc": "加载时控件自动获得输入焦点",
+        "type": "Boolean",
+        "defval": "false",
+        "option": [
+          {"value": "true", "desc": ""},
+          {"value": "false", "desc": ""}
+        ]
+      },
+      {
+        "name": "maxlength",
+        "desc": "输入的最大长度",
+        "type": "Number",
+        "defval": "-",
+        "option": []
+      },
+      {
+        "name": "return-key-type",
+        "desc": "键盘返回键的类型",
+        "type": "String",
+        "defval": "defalut",
+        "option": [
+          {"value": "defalut", "desc": ""},
+          {"value": "go", "desc": ""},
+          {"value": "next", "desc": ""},
+          {"value": "search", "desc": ""},
+          {"value": "send", "desc": ""},
+          {"value": "done", "desc": ""}
+        ]
+      },
+      {
+        "name": "singleline",
+        "desc": "控制内容是否只允许单行",
+        "type": "Boolean",
+        "defval": "true",
+        "option": [
+          {"value": "true", "desc": ""},
+          {"value": "false", "desc": ""}
+        ]
+      },
+      {
+        "name": "max-length",
+        "desc": "控制输入内容的最大长度",
+        "type": "Number",
+        "defval": "-",
+        "option": []
+      },
+      {
+        "name": "max",
+        "desc": "控制当 type 属性为 date 时选择日期的最大时间，格式为 yyyy-MM-dd",
+        "type": "String",
+        "defval": "-",
+        "option": []
+      },
+      {
+        "name": "min",
+        "desc": "控制当 type 属性为 date 时选择日期的最小时间，格式为 yyyy-MM-dd",
+        "type": "String",
+        "defval": "-",
+        "option": []
+      },
+      {
+        "name": "upriseOffset",
+        "desc": "[仅iOS]键盘上边缘与输入框下边缘的间隙",
+        "type": "Number",
+        "defval": "20",
+        "option": []
+      },
+      {
+        "name": "hideDoneButton",
+        "desc": "[仅iOS]隐藏键盘上面的完成栏",
+        "type": "Boolean",
+        "defval": "false",
+        "option": [
+          {"value": "true", "desc": ""},
+          {"value": "false", "desc": ""}
+        ]
+      }
+    ]
+  },
+  {
+    "name": "web",
+    "desc": "网页容器",
+    "url": "https://eeui.app/weex/components/web.html",
+    "attrs": [
+      {
+        "value": "src",
+        "desc": "网页地址",
+        "type": "String",
+        "defval": "-",
+        "option": []
+      }
+    ]
+  }
+]

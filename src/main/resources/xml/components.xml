@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templateSet group="eeui">
+
+    <!--<template name="scroll-view"
+              value="&lt;scroll-view&gt; &lt;/scroll-view&gt;"
+              description="一个列表容器" toReformat="true"
+              toShortenFQNames="true">
+        <variable name="button" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="JAVASCRIPT" value="true"/>
+        </context>
+    </template>-->
+
+</templateSet>
