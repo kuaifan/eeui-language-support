@@ -57,8 +57,14 @@ public class EEUIFileUtil {
         String text = "";
         while (position != null && !text.startsWith("<") && i < 5) {
             text = position.getText();
+            if (text.startsWith("</")) {
+                text = "";
+            }
             if (!text.startsWith("<")) {
                 text = position.getPrevSibling().getText();
+                if (text.startsWith("</")) {
+                    text = "";
+                }
             }
             position = position.getParent();
             i++;

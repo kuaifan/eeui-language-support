@@ -781,6 +781,8 @@
       {
         "name": "iconVisible",
         "desc": "设置tab图标是否可见 (slidingTop无效)",
+        "type": "Boolean",
+        "defval": "false，底部位置：true",
         "option": [
           {"value": "true", "desc": ""},
           {"value": "false", "desc": ""}
@@ -789,6 +791,8 @@
       {
         "name": "iconGravity",
         "desc": "设置tab图标显示位置 (slidingTop无效)",
+        "type": "Number",
+        "defval": "1",
         "option": [
           {"value": "1", "desc": "上方"},
           {"value": "0", "desc": "下方"}
@@ -797,21 +801,29 @@
       {
         "name": "iconWidth",
         "desc": "设置tab图标宽度 (slidingTop无效)",
+        "type": "Number",
+        "defval": "40",
         "option": []
       },
       {
         "name": "iconHeight",
         "desc": "设置tab图标高度 (slidingTop无效)",
+        "type": "Number",
+        "defval": "40",
         "option": []
       },
       {
         "name": "iconMargin",
         "desc": "设置tab图标与文字间距 (slidingTop无效)",
+        "type": "Number",
+        "defval": "10",
         "option": []
       },
       {
         "name": "preload",
         "desc": "是否预加载所有子页面",
+        "type": "Boolean",
+        "defval": "false",
         "option": [
           {"value": "true", "desc": "预加载所有子页面"},
           {"value": "false", "desc": "第一次切换到时加载子页面"}
@@ -938,6 +950,8 @@
       {
         "name": "transparency",
         "desc": "设置背景透明",
+        "type": "Boolean",
+        "defval": "false",
         "option": [
           {"value": "true", "desc": ""},
           {"value": "false", "desc": ""}

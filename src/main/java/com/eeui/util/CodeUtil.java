@@ -78,7 +78,7 @@ public class CodeUtil
         tmpHtml.append("<thead>");
         tmpHtml.append("<tr style='border-left:1px solid #dfe2e5;border-bottom:1px solid #dfe2e5;'>");
         for (String name : theads) {
-            tmpHtml.append("<th style='border-right:1px solid #dfe2e5;border-top:1px solid #dfe2e5;margin:0px;padding:5px 8px;'>").append(name).append("</th>");
+            tmpHtml.append("<th style='border-right:1px solid #dfe2e5;border-top:1px solid #dfe2e5;margin:0px;padding:5px 8px;white-space:nowrap;'>").append(name).append("</th>");
         }
         tmpHtml.append("</tr>");
         tmpHtml.append("</thead>");

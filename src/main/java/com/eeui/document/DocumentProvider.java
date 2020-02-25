@@ -2,6 +2,7 @@ package com.eeui.document;
 
 import com.eeui.insight.bean.Component;
 import com.eeui.util.CodeUtil;
+import com.eeui.util.EEUIFileUtil;
 import com.intellij.lang.documentation.AbstractDocumentationProvider;
 import com.intellij.openapi.util.text.StringUtil;
 import com.intellij.psi.PsiElement;
@@ -41,7 +42,7 @@ public class DocumentProvider extends AbstractDocumentationProvider {
     }
 
     @Override
-    public String generateDoc(final PsiElement element, @Nullable final PsiElement originalElement) {
+    public String generateDoc(PsiElement element, @Nullable PsiElement originalElement) {
         String text = null;
         if (originalElement != null) {
             text = originalElement.getText();
@@ -49,6 +50,10 @@ public class DocumentProvider extends AbstractDocumentationProvider {
 
         if (null != text) {
             Component mComponent = getComponent(text);
+            if (mComponent == null) {
+                text = EEUIFileUtil.getTagName(originalElement);
+                mComponent = getComponent(text);
+            }
             String docHtml = "";
             if (mComponent != null) {
                 if (!TextUtils.isEmpty(mComponent.getUrl())) {
@@ -64,11 +69,7 @@ public class DocumentProvider extends AbstractDocumentationProvider {
                     }
                 }
             }
-            if (TextUtils.isEmpty(docHtml)) {
-                return null;
-            } else {
-                return docHtml;
-            }
+            return TextUtils.isEmpty(docHtml) ? null : docHtml;
         }
         return null;
     }
