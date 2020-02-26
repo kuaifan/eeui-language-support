@@ -3,6 +3,7 @@ package com.eeui.document;
 import com.eeui.insight.bean.Component;
 import com.eeui.util.CodeUtil;
 import com.eeui.util.EEUIFileUtil;
+import com.eeui.util.ExtraModulesUtil;
 import com.intellij.lang.documentation.AbstractDocumentationProvider;
 import com.intellij.openapi.util.text.StringUtil;
 import com.intellij.psi.PsiElement;
@@ -43,6 +44,9 @@ public class DocumentProvider extends AbstractDocumentationProvider {
 
     @Override
     public String generateDoc(PsiElement element, @Nullable PsiElement originalElement) {
+        if (!ExtraModulesUtil.isEEUIProject()) {
+            return null;
+        }
         String text = null;
         if (originalElement != null) {
             text = originalElement.getText();

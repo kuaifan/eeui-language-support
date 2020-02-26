@@ -2,8 +2,11 @@
 
 package com.eeui.util;
 
+import com.eeui.lang.EEUIIcons;
 import com.eeui.lint.Attribute;
 import com.eeui.lint.EEUITag;
+import com.intellij.codeInsight.completion.XmlAttributeInsertHandler;
+import com.intellij.codeInsight.lookup.LookupElementBuilder;
 import com.intellij.json.psi.JsonFile;
 import com.intellij.json.psi.JsonObject;
 import com.intellij.json.psi.JsonProperty;
@@ -206,6 +209,19 @@ public class ExtraModulesUtil
             }
         }
         return results;
+    }
+
+    public static boolean isEEUIProject() {
+        Project project = ProjectUtil.guessCurrentProject(null);
+        if (project.getBasePath() != null) {
+            VirtualFile vf = LocalFileSystem.getInstance().findFileByPath(project.getBasePath());
+            if (vf != null && vf.isDirectory()) {
+                PsiDirectory dir = PsiDirectoryFactory.getInstance(project).createDirectory(vf);
+                PsiFile pkg = dir.findFile("eeui.config.js");
+                return pkg instanceof JSFile;
+            }
+        }
+        return false;
     }
     
     public static boolean isNodeModule(PsiDirectory dir) {

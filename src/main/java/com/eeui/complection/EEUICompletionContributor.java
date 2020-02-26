@@ -5,6 +5,7 @@ import com.eeui.insight.ComponentManager;
 import com.eeui.insight.bean.Component;
 import com.eeui.lang.EEUIIcons;
 import com.eeui.util.EEUIFileUtil;
+import com.eeui.util.ExtraModulesUtil;
 import com.intellij.codeInsight.completion.*;
 import com.intellij.codeInsight.lookup.LookupElement;
 import com.intellij.codeInsight.lookup.LookupElementBuilder;
@@ -20,6 +21,9 @@ public class EEUICompletionContributor extends CompletionContributor {
         extend(CompletionType.BASIC, PlatformPatterns.psiElement(PsiElement.class), new CompletionProvider<CompletionParameters>() {
             protected void addCompletions(@NotNull CompletionParameters completionParameters, @NotNull ProcessingContext processingContext, @NotNull CompletionResultSet resultSet) {
                 if (!EEUIFileUtil.isOnVueFile(completionParameters.getPosition())) {
+                    return;
+                }
+                if (!ExtraModulesUtil.isEEUIProject()) {
                     return;
                 }
                 //

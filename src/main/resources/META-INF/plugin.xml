@@ -1,13 +1,13 @@
 <idea-plugin>
     <id>com.eeui.plugin.eeui</id>
     <name>eeui</name>
-    <version>1.0</version>
+    <version>1.2</version>
     <vendor url="https://github.com/kuaifan/eeui">eeui</vendor>
 
-    <idea-version since-build="173.0"/>
+    <idea-version since-build="193.0"/>
 
     <description><![CDATA[
-      support for eeui framework,
+      Support for eeui framework,
       before use this plugin, you must install plugin <a href="https://github.com/JetBrains/intellij-plugins/tree/master/vuejs">vuejs</a>
     ]]></description>
 
@@ -22,7 +22,7 @@
         <liveTemplateContext implementation="com.eeui.EEUIContext" />
 
         <!-- 文件类型 -->
-        <fileType name="eeui" implementationClass="com.eeui.lang.EEUIFileType" fieldName="INSTANCE" language="eeui" extensions="vue"/>
+        <!--<fileType name="eeui" implementationClass="com.eeui.lang.EEUIFileType" fieldName="INSTANCE" language="eeui" extensions="vue"/>-->
 
         <!-- 标签文档提示 -->
         <lang.documentationProvider language="HTML" implementationClass="com.eeui.document.DocumentProvider" order="first"/>

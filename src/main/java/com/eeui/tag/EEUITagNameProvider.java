@@ -3,6 +3,7 @@ package com.eeui.tag;
 import com.eeui.insight.ComponentManager;
 import com.eeui.insight.bean.Component;
 import com.eeui.lang.EEUIIcons;
+import com.eeui.util.ExtraModulesUtil;
 import com.intellij.codeInsight.completion.XmlTagInsertHandler;
 import com.intellij.codeInsight.lookup.LookupElement;
 import com.intellij.codeInsight.lookup.LookupElementBuilder;
@@ -58,6 +59,9 @@ public class EEUITagNameProvider implements XmlElementDescriptorProvider, XmlTag
      */
     @Override
     public void addTagNameVariants(List<LookupElement> list, @NotNull XmlTag xmlTag, String s) {
+        if (!ExtraModulesUtil.isEEUIProject()) {
+            return;
+        }
         List<Component> componentList = ComponentManager.getComponents();
         for (Component component : componentList) {
             list.add(LookupElementBuilder
