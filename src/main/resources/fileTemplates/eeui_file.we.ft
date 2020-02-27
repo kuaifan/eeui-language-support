@@ -91,7 +91,7 @@
              * 打开新页面
              * @param url           (String)页面地址
              * @param params        (Object)传递参数
-             * @param replace       (Boolean)打开新页面后关闭当期页
+             * @param replace       (Boolean)打开新页面后关闭当前页面
              */
             goForward(url, params, replace) {
                 let pageName = null;
