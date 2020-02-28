@@ -60,7 +60,7 @@ public class EEUIFileUtil {
             if (text.startsWith("</")) {
                 text = "";
             }
-            if (!text.startsWith("<")) {
+            if (!text.startsWith("<") && position.getPrevSibling() != null) {
                 text = position.getPrevSibling().getText();
                 if (text.startsWith("</")) {
                     text = "";
