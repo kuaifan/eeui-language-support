@@ -72,7 +72,6 @@ public class EEUIScriptCompletionContributor extends CompletionContributor {
                                 .withIcon(EEUIIcons.LOGO)
                                 .withBoldness(true)
                                 .withTypeText(module.capitalName() + " Module")
-                                .withCaseSensitivity(false)
                                 .bold()
                                 .withInsertHandler(new StatisticsInsertHandler("insert-module-name", module.getName(), completionParameters.getOriginalPosition()));
                         resultSet.addElement(PrioritizedLookupElement.withPriority(lookupElement, Double.MAX_VALUE));
@@ -95,7 +94,6 @@ public class EEUIScriptCompletionContributor extends CompletionContributor {
                             .withIcon(EEUIIcons.LOGO)
                             .withBoldness(true)
                             .withTypeText(s.getDescDef(module.capitalName() + " Module"))
-                            .withCaseSensitivity(false)
                             .bold()
                             .withInsertHandler(new StatisticsInsertHandler("insert-module-function", module.getName() + "." + s.getName() + "()", completionParameters.getOriginalPosition()));
                     resultSet.addElement(PrioritizedLookupElement.withPriority(lookupElement, Double.MAX_VALUE));
@@ -127,7 +125,6 @@ public class EEUIScriptCompletionContributor extends CompletionContributor {
                                         .withIcon(EEUIIcons.LOGO)
                                         .withBoldness(true)
                                         .withTypeText(s.getDescDef(module.capitalName() + " Component"))
-                                        .withCaseSensitivity(false)
                                         .bold()
                                         .withInsertHandler(new StatisticsInsertHandler("insert-component-function", module.getName() + "." + s.getName() + "()", completionParameters.getOriginalPosition()));
                                 resultSet.addElement(PrioritizedLookupElement.withPriority(lookupElement, Double.MAX_VALUE));
@@ -147,7 +144,6 @@ public class EEUIScriptCompletionContributor extends CompletionContributor {
                             .withIcon(EEUIIcons.LOGO)
                             .withBoldness(true)
                             .withTypeText("<" + entry.getValue() + "/>")
-                            .withCaseSensitivity(false)
                             .bold()
                             .withInsertHandler(new StatisticsInsertHandler("insert-dom-ref", "", completionParameters.getOriginalPosition()));
                     resultSet.addElement(PrioritizedLookupElement.withPriority(lookupElement2, Double.MAX_VALUE));
@@ -164,7 +160,6 @@ public class EEUIScriptCompletionContributor extends CompletionContributor {
                                 .withIcon(EEUIIcons.LOGO)
                                 .withBoldness(true)
                                 .withTypeText(module2.capitalName() + " Component")
-                                .withCaseSensitivity(false)
                                 .bold()
                                 .withInsertHandler(new StatisticsInsertHandler("insert-component-function", module2.getName() + "." + s2.getName() + "()", completionParameters.getOriginalPosition()));
                         resultSet.addElement(PrioritizedLookupElement.withPriority(lookupElement3, Double.MAX_VALUE));
@@ -213,31 +208,35 @@ public class EEUIScriptCompletionContributor extends CompletionContributor {
     /** ********************************************************************************/
 
     private String resolveVarType(PsiElement element, Editor editor) {
-        PsiElement[] elements = GotoDeclarationAction.findTargetElementsNoVS(element.getProject(), editor, element.getTextOffset(), false);
-        if (elements != null) {
-            PsiElement declaration = elements[0];
-            if (declaration != null) {
-                PsiElement exp = declaration.getChildren()[0];
-                if (exp != null) {
-                    if (exp instanceof JSCallExpression) {
-                        JSExpression methodExpression = ((JSCallExpression) exp).getMethodExpression();
-                        if (methodExpression instanceof JSReferenceExpression) {
-                            String expString = methodExpression.getText();
-                            if ("app.requireModule".equals(expString)) {
-                                JSExpression[] args = ((JSCallExpression) exp).getArguments();
-                                if (args.length == 1) {
-                                    JSExpression arg = args[0];
-                                    return arg.getText().replaceAll("\"", "").replaceAll("'", "");
+        try {
+            PsiElement[] elements = GotoDeclarationAction.findTargetElementsNoVS(element.getProject(), editor, element.getTextOffset(), false);
+            if (elements != null) {
+                PsiElement declaration = elements[0];
+                if (declaration != null) {
+                    PsiElement exp = declaration.getChildren()[0];
+                    if (exp != null) {
+                        if (exp instanceof JSCallExpression) {
+                            JSExpression methodExpression = ((JSCallExpression) exp).getMethodExpression();
+                            if (methodExpression instanceof JSReferenceExpression) {
+                                String expString = methodExpression.getText();
+                                if ("app.requireModule".equals(expString)) {
+                                    JSExpression[] args = ((JSCallExpression) exp).getArguments();
+                                    if (args.length == 1) {
+                                        JSExpression arg = args[0];
+                                        return arg.getText().replaceAll("\"", "").replaceAll("'", "");
+                                    }
                                 }
                             }
+                            return exp.getText();
                         }
-                        return exp.getText();
-                    }
-                    if (exp instanceof JSReferenceExpression) {
-                        return this.resolveVarType(exp, editor);
+                        if (exp instanceof JSReferenceExpression) {
+                            return this.resolveVarType(exp, editor);
+                        }
                     }
                 }
             }
+        } catch (Exception ignored) {
+            //
         }
         return null;
     }

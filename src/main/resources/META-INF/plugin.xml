@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>com.eeui.plugin.eeui</id>
     <name>eeui</name>
-    <version>1.2</version>
+    <version>1.3</version>
     <vendor url="https://github.com/kuaifan/eeui">eeui</vendor>
 
     <idea-version since-build="193.0"/>
