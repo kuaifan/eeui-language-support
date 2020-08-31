@@ -1,53 +1,53 @@
 [
   {
     "name": "app.config.env",
-    "desc": "环境变量",
+    "desc": "\u73af\u5883\u53d8\u91cf",
     "root": false,
     "methods": [
-      {"name": "platform", "desc": "运行平台: Android 或 iOS"},
-      {"name": "appName", "desc": "应用名称"},
-      {"name": "appVersion", "desc": "应用版本"},
-      {"name": "osName", "desc": "系统名称: Android 或 iOS"},
-      {"name": "osVersion", "desc": "系统版本"},
-      {"name": "deviceModel", "desc": "手机设备型号"},
-      {"name": "deviceWidth", "desc": "设备宽度"},
-      {"name": "deviceHeight", "desc": "设备高度"}
+      {"name": "platform", "desc": "\u8fd0\u884c\u5e73\u53f0: Android \u6216 iOS"},
+      {"name": "appName", "desc": "\u5e94\u7528\u540d\u79f0"},
+      {"name": "appVersion", "desc": "\u5e94\u7528\u7248\u672c"},
+      {"name": "osName", "desc": "\u7cfb\u7edf\u540d\u79f0: Android \u6216 iOS"},
+      {"name": "osVersion", "desc": "\u7cfb\u7edf\u7248\u672c"},
+      {"name": "deviceModel", "desc": "\u624b\u673a\u8bbe\u5907\u578b\u53f7"},
+      {"name": "deviceWidth", "desc": "\u8bbe\u5907\u5bbd\u5ea6"},
+      {"name": "deviceHeight", "desc": "\u8bbe\u5907\u9ad8\u5ea6"}
     ]
   },
   {
     "name": "app.config",
-    "desc": "环境信息",
+    "desc": "\u73af\u5883\u4fe1\u606f",
     "root": false,
     "methods": [
-      {"name": "params", "desc": "页面传递参数"},
-      {"name": "env", "desc": "环境变量"}
+      {"name": "params", "desc": "\u9875\u9762\u4f20\u9012\u53c2\u6570"},
+      {"name": "env", "desc": "\u73af\u5883\u53d8\u91cf"}
     ]
   },
   {
     "name": "app",
-    "desc": "实例变量",
+    "desc": "\u5b9e\u4f8b\u53d8\u91cf",
     "root": true,
     "methods": [
-      {"name":"requireModule()", "desc": "引用模块"},
-      {"name":"isRegisteredModule()", "desc": "检测模块或接口是否可用"},
-      {"name":"isRegisteredComponent()", "desc": "检测组件是否可用"},
-      {"name":"supports()", "desc": "检测功能是否可用"},
-      {"name":"config", "desc": "环境变量"}
+      {"name":"requireModule()", "desc": "\u5f15\u7528\u6a21\u5757"},
+      {"name":"isRegisteredModule()", "desc": "\u68c0\u6d4b\u6a21\u5757\u6216\u63a5\u53e3\u662f\u5426\u53ef\u7528"},
+      {"name":"isRegisteredComponent()", "desc": "\u68c0\u6d4b\u7ec4\u4ef6\u662f\u5426\u53ef\u7528"},
+      {"name":"supports()", "desc": "\u68c0\u6d4b\u529f\u80fd\u662f\u5426\u53ef\u7528"},
+      {"name":"config", "desc": "\u73af\u5883\u53d8\u91cf"}
     ]
   },
   {
     "name": "WXEnvironment",
-    "desc": "环境变量",
+    "desc": "\u73af\u5883\u53d8\u91cf",
     "root": true,
     "methods": [
-      {"name": "platform", "desc": "运行平台: Android 或 iOS"},
-      {"name": "appName", "desc": "应用名称"},
-      {"name": "appVersion", "desc": "应用版本"},
-      {"name": "osName", "desc": "系统名称: Android 或 iOS"},
-      {"name": "osVersion", "desc": "系统版本"},
-      {"name": "deviceModel", "desc": "手机设备型号"},
-      {"name": "deviceWidth", "desc": "设备宽度"},
-      {"name": "deviceHeight", "desc": "设备高度"}
+      {"name": "platform", "desc": "\u8fd0\u884c\u5e73\u53f0: Android \u6216 iOS"},
+      {"name": "appName", "desc": "\u5e94\u7528\u540d\u79f0"},
+      {"name": "appVersion", "desc": "\u5e94\u7528\u7248\u672c"},
+      {"name": "osName", "desc": "\u7cfb\u7edf\u540d\u79f0: Android \u6216 iOS"},
+      {"name": "osVersion", "desc": "\u7cfb\u7edf\u7248\u672c"},
+      {"name": "deviceModel", "desc": "\u624b\u673a\u8bbe\u5907\u578b\u53f7"},
+      {"name": "deviceWidth", "desc": "\u8bbe\u5907\u5bbd\u5ea6"},
+      {"name": "deviceHeight", "desc": "\u8bbe\u5907\u9ad8\u5ea6"}
     ]
   }
 ]

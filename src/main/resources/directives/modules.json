@@ -2,221 +2,221 @@
   {
     "name": "eeui",
     "methods": [
-      {"name": "adDialog", "desc": "图片广告弹窗"},
-      {"name": "adDialogClose", "desc": "手动关闭弹窗"},
+      {"name": "adDialog", "desc": "\u56fe\u7247\u5e7f\u544a\u5f39\u7a97"},
+      {"name": "adDialogClose", "desc": "\u624b\u52a8\u5173\u95ed\u5f39\u7a97"},
 
-      {"name": "ajax", "desc": "跨域请求"},
-      {"name": "ajaxCancel", "desc": "取消跨域请求"},
-      {"name": "getCacheSizeAjax", "desc": "获取跨域请求缓存"},
-      {"name": "clearCacheAjax", "desc": "清除跨域请求缓存"},
+      {"name": "ajax", "desc": "\u8de8\u57df\u8bf7\u6c42"},
+      {"name": "ajaxCancel", "desc": "\u53d6\u6d88\u8de8\u57df\u8bf7\u6c42"},
+      {"name": "getCacheSizeAjax", "desc": "\u83b7\u53d6\u8de8\u57df\u8bf7\u6c42\u7f13\u5b58"},
+      {"name": "clearCacheAjax", "desc": "\u6e05\u9664\u8de8\u57df\u8bf7\u6c42\u7f13\u5b58"},
 
-      {"name": "alert", "desc": "警告框"},
-      {"name": "confirm", "desc": "确认对话框"},
-      {"name": "input", "desc": "输入对话框"},
+      {"name": "alert", "desc": "\u8b66\u544a\u6846"},
+      {"name": "confirm", "desc": "\u786e\u8ba4\u5bf9\u8bdd\u6846"},
+      {"name": "input", "desc": "\u8f93\u5165\u5bf9\u8bdd\u6846"},
 
-      {"name": "getCacheSizeDir", "desc": "获取内部缓存目录大小"},
-      {"name": "clearCacheDir", "desc": "清空内部缓存目录"},
-      {"name": "getCacheSizeFiles", "desc": "获取内部文件目录大小"},
-      {"name": "clearCacheFiles", "desc": "清空内部文件目录"},
-      {"name": "getCacheSizeDbs", "desc": "获取内部数据库目录大小"},
-      {"name": "clearCacheDbs", "desc": "清空内部数据库目录"},
+      {"name": "getCacheSizeDir", "desc": "\u83b7\u53d6\u5185\u90e8\u7f13\u5b58\u76ee\u5f55\u5927\u5c0f"},
+      {"name": "clearCacheDir", "desc": "\u6e05\u7a7a\u5185\u90e8\u7f13\u5b58\u76ee\u5f55"},
+      {"name": "getCacheSizeFiles", "desc": "\u83b7\u53d6\u5185\u90e8\u6587\u4ef6\u76ee\u5f55\u5927\u5c0f"},
+      {"name": "clearCacheFiles", "desc": "\u6e05\u7a7a\u5185\u90e8\u6587\u4ef6\u76ee\u5f55"},
+      {"name": "getCacheSizeDbs", "desc": "\u83b7\u53d6\u5185\u90e8\u6570\u636e\u5e93\u76ee\u5f55\u5927\u5c0f"},
+      {"name": "clearCacheDbs", "desc": "\u6e05\u7a7a\u5185\u90e8\u6570\u636e\u5e93\u76ee\u5f55"},
 
-      {"name": "swipeCaptcha", "desc": "显示滑动验证码弹窗"},
+      {"name": "swipeCaptcha", "desc": "\u663e\u793a\u6ed1\u52a8\u9a8c\u8bc1\u7801\u5f39\u7a97"},
 
-      {"name": "keyboardHide", "desc": "动态隐藏软键盘"},
-      {"name": "keyboardStatus", "desc": "判断软键盘是否可见"},
+      {"name": "keyboardHide", "desc": "\u52a8\u6001\u9690\u85cf\u8f6f\u952e\u76d8"},
+      {"name": "keyboardStatus", "desc": "\u5224\u65ad\u8f6f\u952e\u76d8\u662f\u5426\u53ef\u89c1"},
 
-      {"name": "loading", "desc": "显示等待弹窗"},
-      {"name": "loadingClose", "desc": "关闭等待弹窗"},
+      {"name": "loading", "desc": "\u663e\u793a\u7b49\u5f85\u5f39\u7a97"},
+      {"name": "loadingClose", "desc": "\u5173\u95ed\u7b49\u5f85\u5f39\u7a97"},
 
-      {"name": "openPage", "desc": "打开新页面"},
-      {"name": "getPageInfo", "desc": "获取页面信息"},
-      {"name": "getPageInfoAsync", "desc": "获取页面信息（异步）"},
-      {"name": "reloadPage", "desc": "重新加载页面"},
-      {"name": "setSoftInputMode", "desc": "设置键盘弹出方式"},
-      {"name": "setPageBackPressed", "desc": "[仅Android]拦截返回按键事件"},
-      {"name": "setOnRefreshListener", "desc": "监听下拉刷新事件"},
-      {"name": "setRefreshing", "desc": "设置下拉刷新状态"},
-      {"name": "setStatusBarStyle", "desc": "修改状态栏字体颜色"},
-      {"name": "setPageStatusListener", "desc": "添加监听页面状态变化"},
-      {"name": "clearPageStatusListener", "desc": "清除监听页面状态变化"},
-      {"name": "onPageStatusListener", "desc": "手动执行(触发)页面状态"},
-      {"name": "getCacheSizePage", "desc": "获取页面缓存大小"},
-      {"name": "clearCachePage", "desc": "手动清除页面缓存"},
-      {"name": "closePage", "desc": "关闭页面"},
-      {"name": "closePageTo", "desc": "关闭至某个页面"},
-      {"name": "openWeb", "desc": "调用系统浏览器打开页面"},
-      {"name": "goDesktop", "desc": "[仅Android]返回手机桌面"},
-      {"name": "getConfigString", "desc": "获取eeui.config.js配置文件指定参数"},
-      {"name": "setCustomConfig", "desc": "自定义eeui.config.js配置参数"},
-      {"name": "getCustomConfig", "desc": "获取eeui.config.js所有自定义的配置参数"},
-      {"name": "clearCustomConfig", "desc": "清除eeui.config.js自定义的配置参数"},
-      {"name": "realUrl", "desc": "规范化url"},
-      {"name": "rewriteUrl", "desc": "将相对地址基于当前地址补全"},
+      {"name": "openPage", "desc": "\u6253\u5f00\u65b0\u9875\u9762"},
+      {"name": "getPageInfo", "desc": "\u83b7\u53d6\u9875\u9762\u4fe1\u606f"},
+      {"name": "getPageInfoAsync", "desc": "\u83b7\u53d6\u9875\u9762\u4fe1\u606f\uff08\u5f02\u6b65\uff09"},
+      {"name": "reloadPage", "desc": "\u91cd\u65b0\u52a0\u8f7d\u9875\u9762"},
+      {"name": "setSoftInputMode", "desc": "\u8bbe\u7f6e\u952e\u76d8\u5f39\u51fa\u65b9\u5f0f"},
+      {"name": "setPageBackPressed", "desc": "[\u4ec5Android]\u62e6\u622a\u8fd4\u56de\u6309\u952e\u4e8b\u4ef6"},
+      {"name": "setOnRefreshListener", "desc": "\u76d1\u542c\u4e0b\u62c9\u5237\u65b0\u4e8b\u4ef6"},
+      {"name": "setRefreshing", "desc": "\u8bbe\u7f6e\u4e0b\u62c9\u5237\u65b0\u72b6\u6001"},
+      {"name": "setStatusBarStyle", "desc": "\u4fee\u6539\u72b6\u6001\u680f\u5b57\u4f53\u989c\u8272"},
+      {"name": "setPageStatusListener", "desc": "\u6dfb\u52a0\u76d1\u542c\u9875\u9762\u72b6\u6001\u53d8\u5316"},
+      {"name": "clearPageStatusListener", "desc": "\u6e05\u9664\u76d1\u542c\u9875\u9762\u72b6\u6001\u53d8\u5316"},
+      {"name": "onPageStatusListener", "desc": "\u624b\u52a8\u6267\u884c(\u89e6\u53d1)\u9875\u9762\u72b6\u6001"},
+      {"name": "getCacheSizePage", "desc": "\u83b7\u53d6\u9875\u9762\u7f13\u5b58\u5927\u5c0f"},
+      {"name": "clearCachePage", "desc": "\u624b\u52a8\u6e05\u9664\u9875\u9762\u7f13\u5b58"},
+      {"name": "closePage", "desc": "\u5173\u95ed\u9875\u9762"},
+      {"name": "closePageTo", "desc": "\u5173\u95ed\u81f3\u67d0\u4e2a\u9875\u9762"},
+      {"name": "openWeb", "desc": "\u8c03\u7528\u7cfb\u7edf\u6d4f\u89c8\u5668\u6253\u5f00\u9875\u9762"},
+      {"name": "goDesktop", "desc": "[\u4ec5Android]\u8fd4\u56de\u624b\u673a\u684c\u9762"},
+      {"name": "getConfigString", "desc": "\u83b7\u53d6eeui.config.js\u914d\u7f6e\u6587\u4ef6\u6307\u5b9a\u53c2\u6570"},
+      {"name": "setCustomConfig", "desc": "\u81ea\u5b9a\u4e49eeui.config.js\u914d\u7f6e\u53c2\u6570"},
+      {"name": "getCustomConfig", "desc": "\u83b7\u53d6eeui.config.js\u6240\u6709\u81ea\u5b9a\u4e49\u7684\u914d\u7f6e\u53c2\u6570"},
+      {"name": "clearCustomConfig", "desc": "\u6e05\u9664eeui.config.js\u81ea\u5b9a\u4e49\u7684\u914d\u7f6e\u53c2\u6570"},
+      {"name": "realUrl", "desc": "\u89c4\u8303\u5316url"},
+      {"name": "rewriteUrl", "desc": "\u5c06\u76f8\u5bf9\u5730\u5740\u57fa\u4e8e\u5f53\u524d\u5730\u5740\u8865\u5168"},
 
-      {"name": "openOtherApp", "desc": "打开常用第三方APP"},
-      {"name": "openOtherAppTo", "desc": "打开其他第三方APP"},
+      {"name": "openOtherApp", "desc": "\u6253\u5f00\u5e38\u7528\u7b2c\u4e09\u65b9APP"},
+      {"name": "openOtherAppTo", "desc": "\u6253\u5f00\u5176\u4ed6\u7b2c\u4e09\u65b9APP"},
 
-      {"name": "copyText", "desc": "复制文本到剪贴板"},
-      {"name": "pasteText", "desc": "获取剪贴板的文本"},
+      {"name": "copyText", "desc": "\u590d\u5236\u6587\u672c\u5230\u526a\u8d34\u677f"},
+      {"name": "pasteText", "desc": "\u83b7\u53d6\u526a\u8d34\u677f\u7684\u6587\u672c"},
 
-      {"name": "saveImage", "desc": "保存图片至本地"},
-      {"name": "saveImageTo", "desc": "[仅Android]保存图片至指定目录"},
+      {"name": "saveImage", "desc": "\u4fdd\u5b58\u56fe\u7247\u81f3\u672c\u5730"},
+      {"name": "saveImageTo", "desc": "[\u4ec5Android]\u4fdd\u5b58\u56fe\u7247\u81f3\u6307\u5b9a\u76ee\u5f55"},
 
-      {"name": "getImageSize", "desc": "获取图片尺寸"},
+      {"name": "getImageSize", "desc": "\u83b7\u53d6\u56fe\u7247\u5c3a\u5bf8"},
 
-      {"name": "openScaner", "desc": "二维码扫描页面"},
+      {"name": "openScaner", "desc": "\u4e8c\u7ef4\u7801\u626b\u63cf\u9875\u9762"},
 
-      {"name": "shareText", "desc": "调用系统分享文字"},
-      {"name": "shareImage", "desc": "调用系统分享图片"},
+      {"name": "shareText", "desc": "\u8c03\u7528\u7cfb\u7edf\u5206\u4eab\u6587\u5b57"},
+      {"name": "shareImage", "desc": "\u8c03\u7528\u7cfb\u7edf\u5206\u4eab\u56fe\u7247"},
 
-      {"name": "setCaches", "desc": "保存数据信息"},
-      {"name": "getCaches", "desc": "获取数据信息"},
-      {"name": "setCachesString", "desc": "保存数据信息（文本形式）"},
-      {"name": "getCachesString", "desc": "获取数据信息（文本形式）"},
-      {"name": "getAllCaches", "desc": "获取所有数据信息"},
-      {"name": "clearAllCaches", "desc": "清除所有数据信息"},
-      {"name": "setVariate", "desc": "设置全局变量"},
-      {"name": "getVariate", "desc": "获取全局变量"},
-      {"name": "getAllVariate", "desc": "获取所有全局变量"},
-      {"name": "clearAllVariate", "desc": "清除所有全局变量"},
+      {"name": "setCaches", "desc": "\u4fdd\u5b58\u6570\u636e\u4fe1\u606f"},
+      {"name": "getCaches", "desc": "\u83b7\u53d6\u6570\u636e\u4fe1\u606f"},
+      {"name": "setCachesString", "desc": "\u4fdd\u5b58\u6570\u636e\u4fe1\u606f\uff08\u6587\u672c\u5f62\u5f0f\uff09"},
+      {"name": "getCachesString", "desc": "\u83b7\u53d6\u6570\u636e\u4fe1\u606f\uff08\u6587\u672c\u5f62\u5f0f\uff09"},
+      {"name": "getAllCaches", "desc": "\u83b7\u53d6\u6240\u6709\u6570\u636e\u4fe1\u606f"},
+      {"name": "clearAllCaches", "desc": "\u6e05\u9664\u6240\u6709\u6570\u636e\u4fe1\u606f"},
+      {"name": "setVariate", "desc": "\u8bbe\u7f6e\u5168\u5c40\u53d8\u91cf"},
+      {"name": "getVariate", "desc": "\u83b7\u53d6\u5168\u5c40\u53d8\u91cf"},
+      {"name": "getAllVariate", "desc": "\u83b7\u53d6\u6240\u6709\u5168\u5c40\u53d8\u91cf"},
+      {"name": "clearAllVariate", "desc": "\u6e05\u9664\u6240\u6709\u5168\u5c40\u53d8\u91cf"},
 
-      {"name": "getStatusBarHeight", "desc": "获取状态栏高度（屏幕像素）"},
-      {"name": "getStatusBarHeightPx", "desc": "获取状态栏高度（px单位）"},
-      {"name": "getNavigationBarHeight", "desc": "获取虚拟键盘高度（屏幕像素）"},
-      {"name": "getNavigationBarHeightPx", "desc": "获取虚拟键盘高度（px单位）"},
-      {"name": "compareVersion", "desc": "比较版本号的大小"},
-      {"name": "getImei", "desc": "获取手机的IMEI"},
-      {"name": "getImeiAsync", "desc": "获取手机的IMEI（异步方法）"},
-      {"name": "getIfa", "desc": "获取手机的IFA"},
-      {"name": "getIfaAsync", "desc": "获取手机的IFA（异步方法）"},
-      {"name": "isIPhoneXType", "desc": "判断是否iPhone X+系列"},
+      {"name": "getStatusBarHeight", "desc": "\u83b7\u53d6\u72b6\u6001\u680f\u9ad8\u5ea6\uff08\u5c4f\u5e55\u50cf\u7d20\uff09"},
+      {"name": "getStatusBarHeightPx", "desc": "\u83b7\u53d6\u72b6\u6001\u680f\u9ad8\u5ea6\uff08px\u5355\u4f4d\uff09"},
+      {"name": "getNavigationBarHeight", "desc": "\u83b7\u53d6\u865a\u62df\u952e\u76d8\u9ad8\u5ea6\uff08\u5c4f\u5e55\u50cf\u7d20\uff09"},
+      {"name": "getNavigationBarHeightPx", "desc": "\u83b7\u53d6\u865a\u62df\u952e\u76d8\u9ad8\u5ea6\uff08px\u5355\u4f4d\uff09"},
+      {"name": "compareVersion", "desc": "\u6bd4\u8f83\u7248\u672c\u53f7\u7684\u5927\u5c0f"},
+      {"name": "getImei", "desc": "\u83b7\u53d6\u624b\u673a\u7684IMEI"},
+      {"name": "getImeiAsync", "desc": "\u83b7\u53d6\u624b\u673a\u7684IMEI\uff08\u5f02\u6b65\u65b9\u6cd5\uff09"},
+      {"name": "getIfa", "desc": "\u83b7\u53d6\u624b\u673a\u7684IFA"},
+      {"name": "getIfaAsync", "desc": "\u83b7\u53d6\u624b\u673a\u7684IFA\uff08\u5f02\u6b65\u65b9\u6cd5\uff09"},
+      {"name": "isIPhoneXType", "desc": "\u5224\u65ad\u662f\u5426iPhone X+\u7cfb\u5217"},
 
-      {"name": "toast", "desc": "Toast提示"},
-      {"name": "toastClose", "desc": "隐藏Toast提示"},
+      {"name": "toast", "desc": "Toast\u63d0\u793a"},
+      {"name": "toastClose", "desc": "\u9690\u85cfToast\u63d0\u793a"},
 
-      {"name": "getVersion", "desc": "获取eeui版本号"},
-      {"name": "getVersionName", "desc": "获取eeui版本号名称"},
-      {"name": "getLocalVersion", "desc": "获取本地软件版本号"},
-      {"name": "getLocalVersionName", "desc": "获取本地软件版本号名称"},
-      {"name": "getSDKVersionCode", "desc": "获取设备系统版本号"},
-      {"name": "getSDKVersionName", "desc": "获取设备系统版本名称"},
-      {"name": "getUpdateId", "desc": "获取已热更新至的数据ID（为0表示没有热更新）"},
-      {"name": "checkUpdate", "desc": "客户端主动触发热更新事件"}
+      {"name": "getVersion", "desc": "\u83b7\u53d6eeui\u7248\u672c\u53f7"},
+      {"name": "getVersionName", "desc": "\u83b7\u53d6eeui\u7248\u672c\u53f7\u540d\u79f0"},
+      {"name": "getLocalVersion", "desc": "\u83b7\u53d6\u672c\u5730\u8f6f\u4ef6\u7248\u672c\u53f7"},
+      {"name": "getLocalVersionName", "desc": "\u83b7\u53d6\u672c\u5730\u8f6f\u4ef6\u7248\u672c\u53f7\u540d\u79f0"},
+      {"name": "getSDKVersionCode", "desc": "\u83b7\u53d6\u8bbe\u5907\u7cfb\u7edf\u7248\u672c\u53f7"},
+      {"name": "getSDKVersionName", "desc": "\u83b7\u53d6\u8bbe\u5907\u7cfb\u7edf\u7248\u672c\u540d\u79f0"},
+      {"name": "getUpdateId", "desc": "\u83b7\u53d6\u5df2\u70ed\u66f4\u65b0\u81f3\u7684\u6570\u636eID\uff08\u4e3a0\u8868\u793a\u6ca1\u6709\u70ed\u66f4\u65b0\uff09"},
+      {"name": "checkUpdate", "desc": "\u5ba2\u6237\u7aef\u4e3b\u52a8\u89e6\u53d1\u70ed\u66f4\u65b0\u4e8b\u4ef6"}
     ]
   },
   {
     "name": "navigationBar",
     "methods": [
-      {"name": "setTitle", "desc": "设置页面标题"},
-      {"name": "setLeftItem", "desc": "设置标题栏左边按钮"},
-      {"name": "setRightItem", "desc": "设置标题栏右边按钮"},
-      {"name": "show", "desc": "手动显示标题栏"},
-      {"name": "hide", "desc": "手动隐藏标题栏"}
+      {"name": "setTitle", "desc": "\u8bbe\u7f6e\u9875\u9762\u6807\u9898"},
+      {"name": "setLeftItem", "desc": "\u8bbe\u7f6e\u6807\u9898\u680f\u5de6\u8fb9\u6309\u94ae"},
+      {"name": "setRightItem", "desc": "\u8bbe\u7f6e\u6807\u9898\u680f\u53f3\u8fb9\u6309\u94ae"},
+      {"name": "show", "desc": "\u624b\u52a8\u663e\u793a\u6807\u9898\u680f"},
+      {"name": "hide", "desc": "\u624b\u52a8\u9690\u85cf\u6807\u9898\u680f"}
     ]
   },
   {
     "name": "navigator",
     "methods": [
-      {"name": "push", "desc": "打开新页面"},
-      {"name": "pop", "desc": "关闭页面"}
+      {"name": "push", "desc": "\u6253\u5f00\u65b0\u9875\u9762"},
+      {"name": "pop", "desc": "\u5173\u95ed\u9875\u9762"}
     ]
   },
   {
     "name": "animation",
     "methods": [
-      {"name": "transition", "desc": "执行动画"}
+      {"name": "transition", "desc": "\u6267\u884c\u52a8\u753b"}
     ]
   },
   {
     "name": "clipboard",
     "methods": [
-      {"name": "setString", "desc": "向系统剪贴板设置内容"},
-      {"name": "getString", "desc": "从系统剪贴板获取内容"}
+      {"name": "setString", "desc": "\u5411\u7cfb\u7edf\u526a\u8d34\u677f\u8bbe\u7f6e\u5185\u5bb9"},
+      {"name": "getString", "desc": "\u4ece\u7cfb\u7edf\u526a\u8d34\u677f\u83b7\u53d6\u5185\u5bb9"}
     ]
   },
   {
     "name": "dom",
     "methods": [
-      {"name": "scrollToElement", "desc": "让页面滚动到 ref 对应的组件"},
-      {"name": "getComponentRect", "desc": "获取某个元素 View 的外框"},
-      {"name": "getLayoutDirection", "desc": "获取当前的布局方向"},
-      {"name": "addRule", "desc": "提供 DOM.addRule 以加载自定义字体"}
+      {"name": "scrollToElement", "desc": "\u8ba9\u9875\u9762\u6eda\u52a8\u5230 ref \u5bf9\u5e94\u7684\u7ec4\u4ef6"},
+      {"name": "getComponentRect", "desc": "\u83b7\u53d6\u67d0\u4e2a\u5143\u7d20 View \u7684\u5916\u6846"},
+      {"name": "getLayoutDirection", "desc": "\u83b7\u53d6\u5f53\u524d\u7684\u5e03\u5c40\u65b9\u5411"},
+      {"name": "addRule", "desc": "\u63d0\u4f9b DOM.addRule \u4ee5\u52a0\u8f7d\u81ea\u5b9a\u4e49\u5b57\u4f53"}
     ]
   },
   {
     "name": "globalEvent",
     "methods": [
-      {"name": "addEventListener", "desc": "注册对一个全局事件的监听"},
-      {"name": "removeEventListener", "desc": "取消对一个全局事件的监听"}
+      {"name": "addEventListener", "desc": "\u6ce8\u518c\u5bf9\u4e00\u4e2a\u5168\u5c40\u4e8b\u4ef6\u7684\u76d1\u542c"},
+      {"name": "removeEventListener", "desc": "\u53d6\u6d88\u5bf9\u4e00\u4e2a\u5168\u5c40\u4e8b\u4ef6\u7684\u76d1\u542c"}
     ]
   },
   {
     "name": "meta",
     "methods": [
-      {"name": "setViewport", "desc": "设置容器默认的宽度"}
+      {"name": "setViewport", "desc": "\u8bbe\u7f6e\u5bb9\u5668\u9ed8\u8ba4\u7684\u5bbd\u5ea6"}
     ]
   },
   {
     "name": "modal",
     "methods": [
-      {"name": "toast", "desc": "小浮层展示文字信息"},
-      {"name": "alert", "desc": "警告框"},
-      {"name": "confirm", "desc": "确认框"},
-      {"name": "prompt", "desc": "提示输入框"}
+      {"name": "toast", "desc": "\u5c0f\u6d6e\u5c42\u5c55\u793a\u6587\u5b57\u4fe1\u606f"},
+      {"name": "alert", "desc": "\u8b66\u544a\u6846"},
+      {"name": "confirm", "desc": "\u786e\u8ba4\u6846"},
+      {"name": "prompt", "desc": "\u63d0\u793a\u8f93\u5165\u6846"}
     ]
   },
   {
     "name": "picker",
     "methods": [
-      {"name": "pick", "desc": "选择器"},
-      {"name": "pickDate", "desc": "日期选择器"},
-      {"name": "pickTime", "desc": "时间选择器"}
+      {"name": "pick", "desc": "\u9009\u62e9\u5668"},
+      {"name": "pickDate", "desc": "\u65e5\u671f\u9009\u62e9\u5668"},
+      {"name": "pickTime", "desc": "\u65f6\u95f4\u9009\u62e9\u5668"}
     ]
   },
   {
     "name": "storage",
     "methods": [
-      {"name": "setItem", "desc": "存储或更新数据到本地"},
-      {"name": "getItem", "desc": "传入键名返回对应的键值"},
-      {"name": "removeItem", "desc": "删除对应键值"},
-      {"name": "length", "desc": "获取所有数据的长度"},
-      {"name": "getAllKeys", "desc": "获取所有数据的数组"}
+      {"name": "setItem", "desc": "\u5b58\u50a8\u6216\u66f4\u65b0\u6570\u636e\u5230\u672c\u5730"},
+      {"name": "getItem", "desc": "\u4f20\u5165\u952e\u540d\u8fd4\u56de\u5bf9\u5e94\u7684\u952e\u503c"},
+      {"name": "removeItem", "desc": "\u5220\u9664\u5bf9\u5e94\u952e\u503c"},
+      {"name": "length", "desc": "\u83b7\u53d6\u6240\u6709\u6570\u636e\u7684\u957f\u5ea6"},
+      {"name": "getAllKeys", "desc": "\u83b7\u53d6\u6240\u6709\u6570\u636e\u7684\u6570\u7ec4"}
     ]
   },
   {
     "name": "stream",
     "methods": [
-      {"name": "fetch", "desc": "发起一个网络请求"}
+      {"name": "fetch", "desc": "\u53d1\u8d77\u4e00\u4e2a\u7f51\u7edc\u8bf7\u6c42"}
     ]
   },
   {
     "name": "webView",
     "methods": [
-      {"name": "goBack", "desc": "<web>组件返回"},
-      {"name": "goForward", "desc": "<web>组件前进"},
-      {"name": "reload", "desc": "<web>组件刷新"}
+      {"name": "goBack", "desc": "<web>\u7ec4\u4ef6\u8fd4\u56de"},
+      {"name": "goForward", "desc": "<web>\u7ec4\u4ef6\u524d\u8fdb"},
+      {"name": "reload", "desc": "<web>\u7ec4\u4ef6\u5237\u65b0"}
     ]
   },
   {
     "name": "input",
     "methods": [
-      {"name": "focus", "desc": "组件聚焦"},
-      {"name": "blur", "desc": "移除焦点并关闭软键盘"},
-      {"name": "setSelectionRange", "desc": "设置文本选区"},
-      {"name": "getSelectionRange", "desc": "获取文本选区"},
-      {"name": "setTextFormatter", "desc": "对输入内容进行实时格式化的规则"}
+      {"name": "focus", "desc": "\u7ec4\u4ef6\u805a\u7126"},
+      {"name": "blur", "desc": "\u79fb\u9664\u7126\u70b9\u5e76\u5173\u95ed\u8f6f\u952e\u76d8"},
+      {"name": "setSelectionRange", "desc": "\u8bbe\u7f6e\u6587\u672c\u9009\u533a"},
+      {"name": "getSelectionRange", "desc": "\u83b7\u53d6\u6587\u672c\u9009\u533a"},
+      {"name": "setTextFormatter", "desc": "\u5bf9\u8f93\u5165\u5185\u5bb9\u8fdb\u884c\u5b9e\u65f6\u683c\u5f0f\u5316\u7684\u89c4\u5219"}
     ],
     "component": true
   },
   {
     "name": "textarea",
     "methods": [
-      {"name": "focus", "desc": "组件聚焦"},
-      {"name": "blur", "desc": "移除焦点并关闭软键盘"},
-      {"name": "setSelectionRange", "desc": "设置文本选区"},
-      {"name": "getSelectionRange", "desc": "获取文本选区"},
-      {"name": "setTextFormatter", "desc": "对输入内容进行实时格式化的规则"}
+      {"name": "focus", "desc": "\u7ec4\u4ef6\u805a\u7126"},
+      {"name": "blur", "desc": "\u79fb\u9664\u7126\u70b9\u5e76\u5173\u95ed\u8f6f\u952e\u76d8"},
+      {"name": "setSelectionRange", "desc": "\u8bbe\u7f6e\u6587\u672c\u9009\u533a"},
+      {"name": "getSelectionRange", "desc": "\u83b7\u53d6\u6587\u672c\u9009\u533a"},
+      {"name": "setTextFormatter", "desc": "\u5bf9\u8f93\u5165\u5185\u5bb9\u8fdb\u884c\u5b9e\u65f6\u683c\u5f0f\u5316\u7684\u89c4\u5219"}
     ],
     "component": true
   }
